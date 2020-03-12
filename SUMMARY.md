@@ -1,6 +1,6 @@
 # Table of contents
 
-* [today I learned](README.md)
+* [About this blog](README.md)
 
 ## STUDY <a id="til"></a>
 
