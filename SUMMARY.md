@@ -2,6 +2,12 @@
 
 * [About this blog](README.md)
 
+## 코딩
+
+* [HTML](undefined/html.md)
+* [CSS](undefined/css/README.md)
+  * [object-fit](undefined/css/object-fit.md)
+
 ## STUDY <a id="til"></a>
 
 * [TIL](til/til/README.md)
@@ -21,4 +27,9 @@
     * [2월 9일 일](til/til/2020/2-9.md)
     * [2월 10일 월](til/til/2020/2020-2-10.md)
     * [2/13 목](til/til/2020/2-13.md)
+
+## 기타 <a id="undefined-1"></a>
+
+* [삽질방지](undefined-1/undefined/README.md)
+  * [VS](undefined-1/undefined/vs.md)
 
