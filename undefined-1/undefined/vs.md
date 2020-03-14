@@ -1,10 +1,16 @@
 # VS
 
-VSCODE 에디터 설치 및 세팅 : [https://bbol-world.tistory.com/43](https://bbol-world.tistory.com/43
+VSCODE 에디터 설치 및 세팅 
+
+[https://bbol-world.tistory.com/43](https://bbol-world.tistory.com/43
 
 )
 
-간단 상식 : terminal에서 vscode 실행하기 : [https://visualize.tistory.com/472](https://visualize.tistory.com/472)
+\[간단 상식 : terminal에서 vscode 실행하기\] 
+
+[https://visualize.tistory.com/472](https://visualize.tistory.com/472)
+
+
 
 ```text
 $ code .
