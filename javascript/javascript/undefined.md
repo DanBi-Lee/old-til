@@ -5,7 +5,7 @@ description: Storage객체
 # 사용자 데이터 저장하기
 
 {% hint style="info" %}
-2020.3.15일 공부 \(모르는 내용은 
+2020.3.15일 공부
 {% endhint %}
 
 ### 사용자 데이터 저장하기 - Storage객체
@@ -30,6 +30,13 @@ fuit1 : 사과
 | 데이터 크기의 상한 | 크다\(5MB\) | 작다\(4KB\) |
 | 데이터의 유효기간 | 없음 | 있음 |
 | 데이터 통신 | 존재하지 않는다 | 요청마다 서버에도 송신 |
+
+{% hint style="info" %}
+데이터 크기의 상한은 어떤 기준은로 정해지는 걸까...?  
+스토리지 전체? 아니면 key값 하나..?
+
+쿠키도 브라우저에 저장되는 걸로 알고 있는데 요청마다 서버에 송신하는 것은 무슨 의미인가...
+{% endhint %}
 
 #### 스토리지에 데이터 보관/취득하기
 
@@ -104,7 +111,9 @@ let data = JSON.parse(storage.getItem('apple'));
 console.log(data.name);
 ```
 
-> JSON.stringify 메소드는 3.7.3절에 나옴
+{% hint style="info" %}
+JSON.stringify 메소드가 가물가물하다...
+{% endhint %}
 
 **스토리지에서 이름 충돌 방지**
 
@@ -172,8 +181,8 @@ storage 이벤트 리스너에서는 이벤트 객체 e를 통해 다음과 같�
 * storageArea : 영향을 받은 스토리지\(localStorage/sessionStorage 객체\)
 
 {% hint style="info" %}
-의문 1 : localStorage
+localStorage는 오리진 단위로 데이터를 관리하지만, sessionStorage는 창/탭 간에 데이터를 공유할 수 없다고 한다. 그렇다면 stoageArea는 무슨 의미가 있는걸까..?
 {% endhint %}
 
-[http://book.interpark.com/product/BookDisplay.do?\_method=detail&sc.prdNo=268808700&gclid=Cj0KCQjwpLfzBRCRARIsAHuj6qVAloi6H14AjkbF8vKsCB5F21VvXf7CM52bDBBzxEMfkwn4dIaoR9saAib2EALw\_wcB](http://book.interpark.com/product/BookDisplay.do?_method=detail&sc.prdNo=268808700&gclid=Cj0KCQjwpLfzBRCRARIsAHuj6qVAloi6H14AjkbF8vKsCB5F21VvXf7CM52bDBBzxEMfkwn4dIaoR9saAib2EALw_wcB)
+\([http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791185890975](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791185890975)\)
 
