@@ -29,15 +29,15 @@
 {% endtab %}
 
 {% tab title="3Q 학습법" %}
-![3Q &#xD559;&#xC2B5;&#xBC95;](../../.gitbook/assets/image%20%286%29.png)
+![3Q &#xD559;&#xC2B5;&#xBC95;](../../.gitbook/assets/image%20%281%29.png)
 {% endtab %}
 
 {% tab title="한 장 컨트리뷰션" %}
-![&#xD55C; &#xC7A5; &#xCEE8;&#xD2B8;&#xB9AC;&#xBDF0;&#xC158; &#xD559;&#xC2B5;&#xBC95;](../../.gitbook/assets/image%20%281%29.png)
+![&#xD55C; &#xC7A5; &#xCEE8;&#xD2B8;&#xB9AC;&#xBDF0;&#xC158; &#xD559;&#xC2B5;&#xBC95;](../../.gitbook/assets/image%20%282%29.png)
 {% endtab %}
 {% endtabs %}
 
 그리고 20자 공부법 프레임워크 사용연습
 
-![&#xB9AC;&#xC561;&#xD2B8;&#xB97C; &#xD55C; &#xC904;&#xB85C;](../../.gitbook/assets/image%20%288%29.png)
+![&#xB9AC;&#xC561;&#xD2B8;&#xB97C; &#xD55C; &#xC904;&#xB85C;](../../.gitbook/assets/image%20%283%29.png)
 
