@@ -8,8 +8,8 @@
 * [CSS](undefined/css/README.md)
   * [object-fit](undefined/css/object-fit.md)
 * [JavaScript](undefined/javascript/README.md)
-  * [클라이언트 측 JavaScript 개발](undefined/javascript/javascript/README.md)
-    * [사용자 데이터 저장하기](undefined/javascript/javascript/undefined.md)
+  * [클라이언트 측 JavaScript 개발](undefined/javascript/clientside-javascript/README.md)
+    * [사용자 데이터 저장하기](undefined/javascript/clientside-javascript/storage.md)
 
 ## STUDY <a id="til"></a>
 
@@ -33,8 +33,8 @@
 
 ## 기타 <a id="undefined-1"></a>
 
-* [삽질방지](undefined-1/undefined/README.md)
-  * [VS](undefined-1/undefined/vs.md)
-* [독서](undefined-1/undefined-1/README.md)
-  * [한 줄 정리의 힘](undefined-1/undefined-1/undefined.md)
+* [삽질방지](undefined-1/record-work/README.md)
+  * [VS](undefined-1/record-work/vs.md)
+* [독서](undefined-1/read-book/README.md)
+  * [한 줄 정리의 힘](undefined-1/read-book/the-power-of-one-line.md)
 
