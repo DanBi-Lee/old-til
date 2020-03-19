@@ -13,6 +13,8 @@
       * [쿠키](coding/javascript/clientside-javascript/storage/cookie.md)
 * [Git](git/README.md)
   * [프로젝트에 git 활용하기](git/project-git-workflow.md)
+  * [git 명령어](git/git-command/README.md)
+    * [브랜치 삭제](git/git-command/undefined.md)
 
 ## STUDY
 
