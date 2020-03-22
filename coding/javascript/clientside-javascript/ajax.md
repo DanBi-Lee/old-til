@@ -4,6 +4,8 @@ description: Ajax
 
 # 서버 연계로 고급 UI 구현하기
 
+## 서버 연계로 고급 UI 구현하기 - Ajax
+
 {% hint style="info" %}
 2020.3.22  공부 , 책 : [**자바스크립트 마스터**](http://www.yes24.com/Product/Goods/44324818)
 {% endhint %}
