@@ -5,7 +5,7 @@ description: Storage객체
 # 사용자 데이터 저장하기
 
 {% hint style="info" %}
-2020.3.15일 공부 , 책 : **자바스크립트 마스터** **북**
+2020.3.15일 공부 , 책 : [**자바스크립트 마스터** **북**](http://www.yes24.com/Product/Goods/44324818)\*\*\*\*
 {% endhint %}
 
 ## 사용자 데이터 저장하기 - Storage객체
