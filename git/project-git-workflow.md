@@ -4,9 +4,9 @@ description: 1인 개발 워크플로우
 
 # 프로젝트에 git 활용하기
 
-### 1인 개발 워크플로우
+### 1인 개발 워크플로
 
-> ※ [Huskyhoochu님의 기술 블로그](https://www.huskyhoochu.com/issue-based-version-control-201/#review) 포스팅을 참고했다.
+{% embed url="https://www.huskyhoochu.com/issue-based-version-control-201" caption="참고 포스팅" %}
 
 학원에서 git 사용법을 배운 뒤, 단순히 `git add`, `git commit`, `git push`만 하는 것 이상으로 git을 활용해보고 싶어서 인터넷 강의와 책을 보며 정보에 기웃거리던 중 git-flow의 존재를 알게 되었다. branch를 나누고 머지한다는 개념만 알고 있는 나에게 실제로 어떻게 활용할 수 있는지 예시를 보는게 굉장히 자극이 되었다.
 

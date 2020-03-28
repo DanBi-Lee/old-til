@@ -16,6 +16,7 @@
   * [프로젝트에 git 활용하기](git/project-git-workflow.md)
   * [git 명령어](git/git-command/README.md)
     * [브랜치 삭제](git/git-command/undefined.md)
+    * [자주 쓰는 git 명령어](git/git-command/git.md)
 
 ## STUDY
 

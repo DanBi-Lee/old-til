@@ -8,6 +8,8 @@ description: 쿠키에 대해서 더 자세히!
 &lt;[제로초님 블로그](https://www.zerocho.com/category/HTML&DOM/post/5918515b1ed39f00182d3048)&gt;를 참고했습니다.
 {% endhint %}
 
+{% embed url="https://www.zerocho.com/category/HTML&DOM/post/5918515b1ed39f00182d3048" caption="" %}
+
 쿠키는 만료 기한이 있는 키-값 저장소이다. document.cookie 하면 현재 쿠키 정보가 나옴 \(httponly 플래그로 자바스크립트에서 쓸 수 없게 막은 쿠키는 나오지 않음\)
 
 쿠키는 매 요청마다 서버로 쿠키가 같이 전송된다. 왜냐,  쿠키는 처음부터 서버와 클라이언트 간의 지속적인 데이터 교환을 위해서만 만들어졌기 때문에 계속 전송 되는 것이다.
