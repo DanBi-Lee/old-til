@@ -6,6 +6,8 @@ description: '학습, 글쓰기'
 
 ## 한 줄 정리의 힘
 
+{% embed url="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=219348114" caption="" %}
+
 > 아사다 스구루 \(지은이\), 황혜숙\(옮긴이\)
 
 독서메모
