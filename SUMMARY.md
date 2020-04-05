@@ -1,6 +1,6 @@
 # Table of contents
 
-* [About this blog](README.md)
+* [목표](README.md)
 
 ## 코딩 <a id="coding"></a>
 
