@@ -1,6 +1,6 @@
 # 30일 메모
 
-![&#xC11C;&#xC57D;&#xC11C;](../../../.gitbook/assets/image%20%287%29.png)
+![&#xC11C;&#xC57D;&#xC11C;](../../../.gitbook/assets/image%20%285%29.png)
 
 ### 1일차 - 나는 왜 쓰고 싶은가
 
