@@ -52,5 +52,5 @@
 * [독서](ect/read-book/README.md)
   * [한 줄 정리의 힘](ect/read-book/the-power-of-one-line.md)
   * [글쓰기가 만만해지는 하루 10분 메모 글쓰기](ect/read-book/10-minutes-a-day-when-writing-becomes-easy/README.md)
-    * [1일차 - 나는 왜 쓰고 싶은가](ect/read-book/10-minutes-a-day-when-writing-becomes-easy/day1-why-i-want-to-write.md)
+    * [30일 메모](ect/read-book/10-minutes-a-day-when-writing-becomes-easy/30days-memo.md)
 
