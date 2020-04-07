@@ -4,9 +4,6 @@
 
 ## 코딩 <a id="coding"></a>
 
-* [HTML](coding/html.md)
-* [CSS](coding/css/README.md)
-  * [object-fit](coding/css/object-fit.md)
 * [JavaScript](coding/javascript/README.md)
   * [클라이언트 측 JavaScript 개발](coding/javascript/clientside-javascript/README.md)
     * [사용자 데이터 저장하기](coding/javascript/clientside-javascript/storage/README.md)
