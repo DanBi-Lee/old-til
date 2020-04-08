@@ -18,6 +18,8 @@
   * [3. JSX 문법](coding/react/3.jsx.md)
   * [4. props](coding/react/4.props.md)
   * [5. useState를 통한 동적 상태 관리](coding/react/5.-usestate.md)
+  * [6. useRef로 특정 DOM 선택하기](coding/react/6.-useref-dom.md)
+  * [7. 배열 렌더링하기](coding/react/7..md)
 * [Git](git/README.md)
   * [프로젝트에 git 활용하기](git/project-git-workflow.md)
   * [git 명령어](git/git-command/README.md)
