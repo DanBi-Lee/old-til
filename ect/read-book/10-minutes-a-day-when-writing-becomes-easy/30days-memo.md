@@ -25,10 +25,10 @@
         <p>&#xC5BC;&#xB9C8;&#xC804; &#xCCAD;&#xC18C;&#xD574;&#xC11C;</p>
         <p>&#xAE68;&#xB057;&#xD55C; &#xC138;&#xBA74;&#xB300;</p>
       </td>
-      <td style="text-align:left">&#xCEF4;&#xD4E8;&#xD130; &#xD654;</td>
+      <td style="text-align:left">&#xCEF4;&#xD4E8;&#xD130; &#xD654;&#xBA74;</td>
       <td style="text-align:left">
         <p>&#xCCAD;&#xC18C;&#xD558;&#xB824;&#xACE0; &#xB458;&#xB7EC;&#xBCF8;</p>
-        <p>&#xBC29; &#xC548; &#xD48D;</p>
+        <p>&#xBC29; &#xC548; &#xD48D;&#xACBD;</p>
       </td>
     </tr>
     <tr>
@@ -42,14 +42,14 @@
       <td style="text-align:left">&#xC138;&#xD0C1;&#xAE30;&#xAC00; &#xB3CC;&#xC544;&#xAC00;&#xB294; &#xC18C;&#xB9AC;</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xD6C4;</td>
+      <td style="text-align:left">&#xD6C4;&#xAC01;</td>
       <td style="text-align:left">&#xD654;&#xC7A5;&#xC2E4; &#xC18C;&#xB3C5;&#xC57D; &#xB0C4;&#xC0C8;</td>
       <td
       style="text-align:left">&#xCE94;&#xB4E4;&#xC758; &#xB77C;&#xBCA4;&#xB354; &#xD5A5;</td>
         <td style="text-align:left">-</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xBBF8;</td>
+      <td style="text-align:left">&#xBBF8;&#xAC01;</td>
       <td style="text-align:left">
         <p>&#xC57D;&#xCD08; &#xB2EC;&#xC778; &#xBB3C;&#xC758;</p>
         <p>&#xC309;&#xC2F8;&#xB984;&#xD568;</p>
@@ -61,11 +61,11 @@
       <td style="text-align:left">&#xBB3C; &#xB9DB;</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xCD09;</td>
+      <td style="text-align:left">&#xCD09;&#xAC01;</td>
       <td style="text-align:left">&#xB85C;&#xC158;&#xC758; &#xCC28;&#xAC00;&#xC6C0; &#xCD09;&#xCD09;&#xD568;</td>
       <td
       style="text-align:left">&#xBCF4;&#xB4E4;&#xBCF4;&#xB4E4;&#xD55C; &#xC778;&#xD615;</td>
-        <td style="text-align:left">&#xB531;&#xB531;&#xD55C; &#xD0A4;&#xBCF4;</td>
+        <td style="text-align:left">&#xB531;&#xB531;&#xD55C; &#xD0A4;&#xBCF4;&#xB4DC;</td>
     </tr>
   </tbody>
 </table>
