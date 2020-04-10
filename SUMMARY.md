@@ -51,6 +51,7 @@
     * [4/1 수](study/til/2020/4-1.md)
     * [4/7 화](study/til/2020/4-7.md)
     * [4/8 수](study/til/2020/4-8.md)
+    * [4/9 목](study/til/2020/4-9.md)
 
 ## 기타 <a id="ect"></a>
 
