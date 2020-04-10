@@ -23,11 +23,11 @@
   * [8. useEffect](coding/react/8.-useeffect.md)
   * [9. useMemo](coding/react/9.-usememo.md)
   * [10. useCallback](coding/react/10.-usecallback.md)
-* [Git](git/README.md)
-  * [프로젝트에 git 활용하기](git/project-git-workflow.md)
-  * [git 명령어](git/git-command/README.md)
-    * [브랜치 삭제](git/git-command/undefined.md)
-    * [자주 쓰는 git 명령어](git/git-command/git.md)
+* [Git](coding/git/README.md)
+  * [프로젝트에 git 활용하기](coding/git/project-git-workflow.md)
+  * [git 명령어](coding/git/git-command/README.md)
+    * [브랜치 삭제](coding/git/git-command/undefined.md)
+    * [자주 쓰는 git 명령어](coding/git/git-command/git.md)
 
 ## STUDY
 
