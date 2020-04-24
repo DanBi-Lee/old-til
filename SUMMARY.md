@@ -9,6 +9,7 @@
 * [JavaScript](coding/javascript/README.md)
   * [HTML과 XML문서 다루기 - DOM](coding/javascript/html-xml-dom/README.md)
     * [DOM의 기본](coding/javascript/html-xml-dom/dom.md)
+    * [클라이언트 측 JavaScript의 사전 지식](coding/javascript/html-xml-dom/javascript.md)
   * [클라이언트 측 JavaScript 개발](coding/javascript/clientside-javascript/README.md)
     * [사용자 데이터 저장하기](coding/javascript/clientside-javascript/storage/README.md)
       * [쿠키](coding/javascript/clientside-javascript/storage/cookie.md)
