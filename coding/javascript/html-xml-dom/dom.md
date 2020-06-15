@@ -61,7 +61,9 @@
         &#xACBD;&#xC6B0;&#xB3C4; &#xC788;&#xB2E4;.</td>
     </tr>
   </tbody>
-</table>{% hint style="info" %}
+</table>
+
+{% hint style="info" %}
 **DOM에 대한 포스**
 {% endhint %}
 
