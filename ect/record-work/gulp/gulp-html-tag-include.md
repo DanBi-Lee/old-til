@@ -4,6 +4,8 @@ description: gulp로 html 편하게 쓰기
 
 # gulp-html-tag-include
 
+2020.06.18
+
 {% embed url="https://www.npmjs.com/package/gulp-html-tag-include" %}
 
 gulp강의에는 pug를 사용하는 방법을 소개해줬지만, pug의 필요성을 아직 느끼지 못하여 배울 단계가 아닌 것 같다.
