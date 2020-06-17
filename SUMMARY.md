@@ -73,6 +73,7 @@
 ## 기타 <a id="ect"></a>
 
 * [삽질방지](ect/record-work/README.md)
+  * [Gulp 세팅](ect/record-work/gulp.md)
   * [VS](ect/record-work/vs.md)
 * [독서](ect/read-book/README.md)
   * [한 줄 정리의 힘](ect/read-book/the-power-of-one-line.md)
