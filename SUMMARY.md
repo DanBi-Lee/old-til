@@ -7,6 +7,7 @@
 * [HTML](coding/html/README.md)
   * [table 태그](coding/html/table-tag.md)
 * [JavaScript](coding/javascript/README.md)
+  * [JS 크롬 앱 만들기](coding/javascript/js.md)
   * [HTML과 XML문서 다루기 - DOM](coding/javascript/html-xml-dom/README.md)
     * [DOM의 기본](coding/javascript/html-xml-dom/dom.md)
     * [클라이언트 측 JavaScript의 사전 지식](coding/javascript/html-xml-dom/javascript.md)
