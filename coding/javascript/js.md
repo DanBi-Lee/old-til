@@ -14,7 +14,7 @@
 {% endhint %}
 
 * [x] 시계 만들기
-* [ ] 유저 이름 입력창
+* [x] 유저 이름 입력창
 * [ ] ToDoList 만들기
 * [ ] 이미지 불러오기
 * [ ] 날씨 불러오기
@@ -59,6 +59,111 @@ init();
 > \(조건\) ? \(참일 경우\) : \(거짓일 경우\)
 
 ### 2. 유저 이름 입력
+
+#### part 1, 2
+
+1. form, input 태그 생성
+2. Local Storage 이용
+   * 로컬 스토리지 저장
+
+     ```text
+     localStorage.setItem(/*key*/, /*value*/);
+     ```
+
+   * 로컬 스토리지 값 불러오기
+
+     ```text
+     localStorage.getItem(/*key*/);
+     ```
+3. local storage여부에 따라서
+   1. 있으면 : 인사 그리기
+
+      ```text
+      const form = document.querySelector(".js-form"),
+          input = form.querySelector("input"),
+          greeting = document.querySelector(".js-greetings");
+      ​
+      const USER_LS = "currentUser",
+          SHOWING_CN = "showing";
+      ​
+      function paintGreeting(text){
+          form.classList.remove(SHOWING_CN);
+          greeting.classList.add(SHOWING_CN);
+          greeting.innerText = `Hello ${text}`;
+      }
+      ```
+
+   2. 없으면 ? 이름 물어보기
+      1. 이름 묻는 form태그 보이도록 처리
+      2. input에 이름을 물어봤을 때 이벤트 제어
+         1. 기본 submit이벤트를 제거한다.
+
+            ```text
+            function handleSubmit(event){
+                event.preventDefault();
+            }
+            ```
+
+         2.  입력 받은 이름을 그린다.
+
+            ```text
+            const value = input.value;
+            paintGreeting(value);
+            ```
+
+         3. 로컬 스토리지에 저장한다.
+
+            ```text
+            function saveName(text){
+                localStorage.setItem(USER_LS, text);
+            }
+            ```
+
+```javascript
+const form = document.querySelector(".js-form"),
+    input = form.querySelector("input"),
+    greeting = document.querySelector(".js-greetings");
+​
+const USER_LS = "currentUser",
+    SHOWING_CN = "showing";
+​
+function saveName(text){
+    localStorage.setItem(USER_LS, text);
+}
+​
+function handleSubmit(event){
+    event.preventDefault();
+    const value = input.value;
+    saveName(value);
+    paintGreeting(value);
+}
+​
+function askForName(){
+    form.classList.add(SHOWING_CN);
+    form.addEventListener("submit", handleSubmit);
+}
+​
+function paintGreeting(text){
+    form.classList.remove(SHOWING_CN);
+    greeting.classList.add(SHOWING_CN);
+    greeting.innerText = `Hello ${text}`;
+}
+​
+function loadName(){
+    const currentUser = localStorage.getItem(USER_LS);
+    if(currentUser === null){
+        askForName();
+    } else {
+        paintGreeting(currentUser);
+    }
+}
+​
+function init(){
+    loadName();
+}
+​
+init();
+```
 
 ### 3. ToDoList 만들기
 
