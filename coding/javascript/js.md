@@ -15,7 +15,7 @@
 
 * [x] 시계 만들기
 * [x] 유저 이름 입력창
-* [ ] ToDoList 만들기
+* [x] ToDoList 만들기
 * [ ] 이미지 불러오기
 * [ ] 날씨 불러오기
 
@@ -166,6 +166,99 @@ init();
 ```
 
 ### 3. ToDoList 만들기
+
+#### part1 : 목록그리기
+
+* 방법은 `greeting.js`와 비슷
+* `document.createElement()`
+* `appendChild()`함수를 활용
+
+#### part2 : 목록 저장하기
+
+1. 할 일 목록 저장 \(목록은 array\)
+2. `JSON.stringify()`는 자바스크립트 object를 string으로 바꿔준다.
+3. `JSON.parse()`는 불러온 JSON을 object로 변환해준다.
+4. `forEach()`함수를 사용하여 array를 반복 처리한다.
+
+#### part3 : 목록 지우기
+
+1. local storage에서 to do 하나 지우기
+   * `filter()`함수 사용
+2. 그런 다음 저장하기
+3. html에서도 지우기
+   * `event.target.parentNode`
+   * `removeChild()`함수 사용
+
+```javascript
+const toDoForm = document.querySelector(".js-toDoForm"),
+    toDoInput = toDoForm.querySelector("input"),
+    toDoList = document.querySelector(".js-toDoList");
+​
+const TODOS_LS = "toDos";
+​
+let toDos = [];
+​
+function deleteToDo(event){
+    console.log(event.target.parentNode);
+    const btn = event.target;
+    const li = btn.parentNode;
+    toDoList.removeChild(li);
+    const cleanToDos = toDos.filter(function(toDo){
+        return toDo.id !== parseInt(li.id);
+    });
+    console.log(cleanToDos);
+    toDos = cleanToDos;
+    saveToDos();
+}
+​
+function saveToDos(){
+    localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
+}
+​
+function paintToDo(text){
+    const li = document.createElement("li");
+    const delBtn = document.createElement("button");
+    delBtn.innerText = "X";
+    delBtn.addEventListener("click", deleteToDo);
+    const span = document.createElement("span");
+    const newId = toDos.length + 1;
+    span.innerText = text;
+    li.appendChild(delBtn);
+    li.appendChild(span);
+    li.id = newId;
+    toDoList.append(li);
+    const toDoObj = {
+        text : text,
+        id : toDos.length + 1
+    };
+    toDos.push(toDoObj);
+    saveToDos();
+}
+​
+function handleSubmit(event){
+    event.preventDefault();
+    const currentValue = toDoInput.value;
+    paintToDo(currentValue);
+    toDoInput.value = "";
+}
+​
+function loadToDos(){
+    const loadedToDos = localStorage.getItem(TODOS_LS);
+    if(loadedToDos !== null){
+        const parseToDos = JSON.parse(loadedToDos);
+        parseToDos.forEach(function(toDo){
+            paintToDo(toDo.text);
+        })
+    }
+}
+​
+function init(){
+    loadToDos();
+    toDoForm.addEventListener("submit", handleSubmit);
+}
+​
+init();
+```
 
 ### 4. 이미지 불러오기
 
