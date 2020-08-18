@@ -16,7 +16,7 @@
 * [x] 시계 만들기
 * [x] 유저 이름 입력창
 * [x] ToDoList 만들기
-* [ ] 이미지 불러오기
+* [x] 이미지 불러오기
 * [ ] 날씨 불러오기
 
 ### 1. 시계만들기
@@ -261,6 +261,36 @@ init();
 ```
 
 ### 4. 이미지 불러오기
+
+```javascript
+Math.ceil() // 올림
+Math.floor() // 버림
+```
+
+```javascript
+const body = document.querySelector("body");
+
+const IMG_NUMBER = 5;
+
+function paintImage(imgNumber){
+    const image = new Image();
+    image.src = `../img/background_${imgNumber + 1}.jpg`;
+    image.classList.add("bgImage");
+    body.appendChild(image);
+}
+
+function genRandom(){
+    const number = Math.floor(Math.random() * IMG_NUMBER);
+    return number;
+}
+
+function init(){
+    const randomNumber = genRandom();
+    paintImage(randomNumber);
+}
+
+init();
+```
 
 ### 5. 날씨 불러오기
 
