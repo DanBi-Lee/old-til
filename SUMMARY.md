@@ -9,6 +9,7 @@
 * [JavaScript](coding/javascript/README.md)
   * [class](coding/javascript/class.md)
   * [Promise](coding/javascript/promise.md)
+  * [async - await](coding/javascript/async-await.md)
   * [JS 크롬 앱 만들기](coding/javascript/js.md)
   * [HTML과 XML문서 다루기 - DOM](coding/javascript/html-xml-dom/README.md)
     * [DOM의 기본](coding/javascript/html-xml-dom/dom.md)
