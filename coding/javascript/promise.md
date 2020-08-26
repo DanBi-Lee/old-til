@@ -328,3 +328,29 @@ Promise.race([p(1000), p(2000), p(3000)]).then(messages=>{
 // 뒤에것도 실행되긴 한다.
 ```
 
+{% hint style="info" %}
+**Q1** 안녕하세요. '29. async function과 await -1'를 듣다가 질문 남깁니다. ‌
+
+```javascript
+// Promise 객체를 리턴하는 함수
+function p(ms){
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            resolve(ms);
+        }, ms);
+    });
+}
+// Promise 객체를 리턴하는 함수를 await로 호출하는 방법
+const ms = await p(1000);
+console.log(`${ms}ms 후에 실행된다.`);
+```
+
+‌ 위 코드를 node환경에서 실행시키려고 하면 오류가 나고, await를 사용하는 경우에는 항상 async 함수 안에서 사용되어야 한다고 가르쳐 주셨는데요. ‌ 강사님의 설명처럼 node환경에서 동작시킬때는 문법오류가 뜨는데, 크롬 브라우저 콘솔창에 위 구문을 치면 오류가 나지 않고 실행이 됩니다. 브라우저에서 쓸때는 문법이 다르게 적용되는건가요? 왜 두 환경에서 결과가 서로 다른지 알고싶습니다.
+
+**A1** 크롬코드를 보면 콘솔을 구현한 함수가 async함수라서 콘솔창에서는 가능한것같습니다. ‌ 129번줄에 보시면 async evaluateCommandInConsole라는 함수를 볼수있습니다 이때문에 가능합니다.   
+  
+[https://chromium.googlesource.com/chromium/src.git/+/e8111c396fef38da6654093433b4be93bed01dce/third\_party/WebKit/Source/devtools/front\_end/console\_model/ConsoleModel.js](https://chromium.googlesource.com/chromium/src.git/+/e8111c396fef38da6654093433b4be93bed01dce/third_party/WebKit/Source/devtools/front_end/console_model/ConsoleModel.js)
+{% endhint %}
+
+
+

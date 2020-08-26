@@ -285,3 +285,55 @@ class Child extends Parent{}
 console.log(Parent.age, Child.age); // static도 상속 된다.
 ```
 
+{% hint style="info" %}
+**Q1** 안녕하세요. 클래스 강의를 듣고 몇가지 궁금점이 생겨서 질문 드립니다. ‌ ‌ ‌ 1. 멤버 함수 ‌ 멤버 함수를 공부 할 때, ‌
+
+```javascript
+class A{
+    hello1(){
+        console.log('hello1', this);
+    }
+    
+    hello2 = () => {
+        console.log('hello2', this);
+    }
+}
+
+new A().hello1();
+new A().hello2();
+```
+
+‌ 위처럼 arrow함수에서 작성한 this도 A클래스로 만듣 객체를 가르키는 결과가 나옵니다. ‌ 이전 생성자 함수 강의에서는 arrow함수 안에 this가 생기지 않아서 생성자 함수로 사용이 불가하다고 배운것으로 기억하는데, class안의 멤버함수로 arrow함수를 사용할 경우 this와 어떻게 차이가 생기는지 알 수 있을까요? ‌
+
+‌ 2. 멤버 변수 ‌ 멤버 변수를 미리 작성할 수 있다는 것은 알았는데, 멤버 변수를 선언해놓고 constructor 함수를 다시 선언하면 기존 멤버에 의미가 있나요? ‌ 예를 들어서, ‌
+
+```javascript
+class A {
+	name = 'Mark';
+	
+	constructor(name){
+		this.name = name;
+	}
+}
+```
+
+‌ 위와 같이 class를 선언했을 때, ‌
+
+```javascript
+const a = new A('Anna');
+const b = new A();
+```
+
+‌ `a.name` 은 'Anna', ‌ `b.name` 은 undefined로 멤버 변수 name으로 할당했던 'Mark'가 쓰이는 일은 없지 않나요? 24. 클래스 D 강의의 7분쯤에 constructor로 age와 name을 받는데 따로 age와 name을 멤버 함수로 선언해두는 것인지 궁금합니다.
+
+**A1** 우선 2번은 제생각에는 강의하시는분이 타입스스크립트를 많이쓰셔서 습관이 아닐까합니다. 굳이 선언할 필요가없어보입니다 좀 더 생각해보고 추가 내용이있다면 대댓글로 추가해드리겠습니다. ‌ 
+
+1번은 arrow함수의 특성때문입니다. 간단하게 arrow함수는 함수가 정의된 곳의 환경이 this가 되고 일반함수는 호출 방식에 따라서 this를 동적으로 정의합니다. 우선은 이정도만 기억하고 있으시면 무방할거같습니다. ‌ 
+
+arrow함수는 prototype을 가지지 않아서 new키워드를 통해 생성하려고 한다면 constructor가 아니라서 생성할수 없다고 에러가 나올것입니다. this가 내부에 존재하지 않아서 사용못한다는건 객체에서 매서드를 arrow 함수로 정의하면 내부에서 this의 값은 window가 나오는것이랑 관련되어 보입니다. 위에서 말했듯이 arrow함수는 정의될때의 환경이 this로 정의됩니다. 이러한 환경을 정의할수있는것은 함수 또는 class\(따지자면 class도 함수이기 때문이다\) 이기 때문에 class 내부에서 정의한 arrow함수의 this는 class가 될수 있지만 객체내부에서 정의한 arrow함수의 this는 해당 객체의 환경 일반적으로 window가 됩니다. 이러한 이유 때문에 클래스에서 정의한 arrow함수의 this는 위와같은 결과를 보여줍니다. ‌ 
+
+사실 이와같은 현상들을 완전히 이해하려면 prototype과 execution context를 완전히 이해해야 하는데 이것을 이해하기위해 this, lexical scope, scope chain등 너무 많은것을 공부해야해서 지금 모든것을 이해하고 해당 코스에서 요구하는 수준을 한참 뛰어넘는다고 생각합니다. 일반 함수와 arrow함수의 차이를 간단히 설명하고 추가적으로 좀 더 자세한 내용을 설명 드렸으나 현재 이해가 안될수도있고 전부 이해를 할필요는 없다고 생각됩니다. 해당코스를 한참벗어나는 수준이기 때문에 해당 코스를 마무리하시고 자바스크립트의 코어에 대해서 공부할 기회가 생길때 자세히 공부하시면 좋을거 같습니다.
+{% endhint %}
+
+
+
