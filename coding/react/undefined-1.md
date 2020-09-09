@@ -1,65 +1,74 @@
-# 컴포넌트 만들기
+# 클래스형 컴포넌트
 
+{% hint style="info" %}
+과거에는 함수형 컴포넌트에서 state를 변경할 수 없는 등의 문제로 클래스형 컴포넌트를 사용했으나, hook을 사용하게 되면서, 함수형 컴포넌트를 사용하게 되었다.
+
+클래스형 컴포넌트는 유지보수를 하거나, 몇몇의 특수 케이스에서 사용되니 간단히 사용 방법을 익혀두자.
+{% endhint %}
+
+{% tabs %}
+{% tab title="함수형 컴포넌트" %}
 {% code title="Hello.js" %}
-```jsx
-import React from 'react'; // 1. 리액트를 불러오겠다.
-
-function Hello({color, name}){ // 2. 컴포넌트는 대문자로 시작한다.
-return <div style={{color}}>안녕하세요, {name}</div>; //jsx
-}
-
-Hello.defaultProps = {
-    name : '이름없음'
-}
-
-export default Hello; // 3. 헬로라는 컴포넌트를 내보낸다.
-```
-{% endcode %}
-
-{% code title="App.js" %}
-```jsx
+```javascript
 import React from 'react';
-import Hello from './Hello'; // 1. 불러온다.
 
-function App() {
+function Hello({ color, name, isSpecial }) {
   return (
-    <div>
-      <Hello /> {/* 2. 이런식으로 붙인다*/}
+    <div style={{ color }}>
+      {isSpecial && <b>*</b>}
+      안녕하세요 {name}
     </div>
   );
 }
 
-export default App; // 3. 내보낸다.
+Hello.defaultProps = {
+  name: '이름없음'
+};
+
+export default Hello;
 ```
 {% endcode %}
+{% endtab %}
 
-{% code title="index.js" %}
-```jsx
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+{% tab title="클래스형 컴포넌트" %}
+{% code title="Hello.js" %}
+```javascript
+import React, { Component } from 'react';
 
-ReactDOM.render( // 브라우저에 있는 실제 DOM 내부에 리액트 컴포넌트를 렌더링하겠다는 의
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root') // 아이디가 root인 DOM을 선택한다.
-);
+class Hello extends Component {
+  // defaultProps를 선언하는 또다른 방법
+	/* 
+	static defaultProps = {
+    name : '이름없음'
+  }
+  */
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  render() {
+    const { color, name, isSpecial } = this.props;
+    return (
+      <div style={{ color }}>
+        {isSpecial && <b>*</b>}
+        안녕하세요 {name}
+      </div>
+    );
+  }
+}
+
+Hello.defaultProps = {
+  name: '이름없음'
+};
+
+export default Hello;
 ```
 {% endcode %}
+{% endtab %}
+{% endtabs %}
 
-{% code title="public/index.html" %}
-```markup
-<div id="root"></div>
-```
-{% endcode %}
+**차이점**
 
-
+1. `import {Component} form 'react'`로 컴포넌트를 따로 임포트한다.
+2. 클래스형 컴포넌트에서는 `render` 메서드에서 JSX를 반환
+3. `props` 조회는 `this.props`로
+4. `defaultProps`는 기존과 같이 할 수 있음
+   * 혹은 `static`키워드를 사용하여 내부에서 선언할 수도 있음
 
