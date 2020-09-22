@@ -1,7 +1,5 @@
 # react-router
 
-
-
 ## 라우터 소개
 
 ### **S**ingle **P**age **A**pplication
