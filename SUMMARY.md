@@ -42,6 +42,8 @@
     * [서브 라우트](coding/react/react-router/undefined-2.md)
   * [Redux](coding/react/redux/README.md)
     * [리덕스 기본](coding/react/redux/undefined.md)
+    * [리덕스 모듈](coding/react/redux/undefined-1.md)
+    * [redux-devtool](coding/react/redux/redux-devtool.md)
 * [Git](coding/git/README.md)
   * [프로젝트에 git 활용하기](coding/git/project-git-workflow.md)
   * [git 명령어](coding/git/git-command/README.md)
