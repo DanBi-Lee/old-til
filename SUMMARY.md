@@ -86,6 +86,7 @@
     * [4/12 일](study/til/2020/4-12.md)
     * [4/22 수](study/til/2020/4-22.md)
     * [4/24 금](study/til/2020/4-24.md)
+    * [10월 추석 스파르타온라인 코딩공부 회고](study/til/2020/sparta-online.md)
 
 ## 기타 <a id="ect"></a>
 
