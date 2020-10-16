@@ -19,6 +19,8 @@
       * [쿠키](coding/javascript/clientside-javascript/storage/cookie.md)
     * [서버 연계로 고급 UI 구현하기](coding/javascript/clientside-javascript/ajax/README.md)
       * [Ajax](coding/javascript/clientside-javascript/ajax/ajax.md)
+* [Typescript](coding/typescript/README.md)
+  * [타입스크립트 시작하기](coding/typescript/setting_typescript_up.md)
 * [React](coding/react/README.md)
   * [1. 리액트 시작하기](coding/react/1.sart-react.md)
   * [2. 컴포넌트 만들기](coding/react/2.make-component.md)
