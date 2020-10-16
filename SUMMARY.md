@@ -22,6 +22,8 @@
 * [Typescript](coding/typescript/README.md)
   * [타입스크립트 시작하기](coding/typescript/setting_typescript_up/README.md)
     * [tsc-watch](coding/typescript/setting_typescript_up/tsc-watch.md)
+  * [Interface](coding/typescript/interface.md)
+  * [Class](coding/typescript/class.md)
 * [React](coding/react/README.md)
   * [1. 리액트 시작하기](coding/react/1.sart-react.md)
   * [2. 컴포넌트 만들기](coding/react/2.make-component.md)
