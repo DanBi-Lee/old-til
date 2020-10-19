@@ -19,6 +19,7 @@
       * [쿠키](coding/javascript/clientside-javascript/storage/cookie.md)
     * [서버 연계로 고급 UI 구현하기](coding/javascript/clientside-javascript/ajax/README.md)
       * [Ajax](coding/javascript/clientside-javascript/ajax/ajax.md)
+  * [Redux](coding/javascript/redux.md)
 * [Typescript](coding/typescript/README.md)
   * [타입스크립트 시작하기](coding/typescript/setting_typescript_up/README.md)
     * [tsc-watch](coding/typescript/setting_typescript_up/tsc-watch.md)
