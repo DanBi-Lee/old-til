@@ -27,6 +27,7 @@
   * [Class](coding/typescript/class.md)
   * [Generic](coding/typescript/generic.md)
   * [Intersection & Union](coding/typescript/intersection-and-union.md)
+  * [타입별칭](coding/typescript/type-alias.md)
 * [React](coding/react/README.md)
   * [1. 리액트 시작하기](coding/react/1.sart-react.md)
   * [2. 컴포넌트 만들기](coding/react/2.make-component.md)
