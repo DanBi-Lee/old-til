@@ -112,3 +112,7 @@ export default About;
 ```
 {% endcode %}
 
+{% embed url="https://codesandbox.io/s/router-tutorial-parameter-query-xf4p8?file=/src/Profile.js" %}
+
+
+
