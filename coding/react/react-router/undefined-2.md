@@ -2,11 +2,12 @@
 
 ## 서브라우트 만들기
 
-서브라우트란?
+* 서브라우트
 
-라우트 안에 있는 라우트
+  * 라우트 안에 있는 라우트
+  * 라우트를 사용한 컴포넌트 내부에서 라우트를 한번 더 쓰면 된다.
 
-라우트를 사용한 컴포넌트 내부에서 라우트를 한번 더 쓰면 된다.
+  > 사용 예시: 페이지 안에 탭이 있는 경우. 서브라우트를 사용하면 편하다.
 
 {% tabs %}
 {% tab title="Plain App.js" %}
@@ -114,6 +115,8 @@ export default Profile;
 ```
 {% endtab %}
 {% endtabs %}
+
+{% embed url="https://codesandbox.io/s/router-tutorial-seobeu-rauteu-vp9r0?file=/src/Profiles.js" %}
 
 
 
