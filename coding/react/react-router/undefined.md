@@ -2,6 +2,8 @@
 
 ## 프로젝트 준비 및 기본적인 사용법
 
+{% embed url="https://codesandbox.io/s/router-tutirial-dfk46?file=/src/App.js" %}
+
 목표 : 리액트 라우터를 사용하기 위해 프로젝트를 준비하고 리액트의 기본적인 사용법 배우기
 
 1. npx create-react-app touter-tutorial
