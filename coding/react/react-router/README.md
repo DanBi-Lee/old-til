@@ -1,12 +1,16 @@
-# react-router
+---
+description: 라우터 소개
+---
 
-## 라우터 소개
+# 리액트 라우터 \( react-router \)
+
+## 리액트 라우터
 
 ### **S**ingle **P**age **A**pplication
 
-SPA에서는 라우팅을 클라이언트가 담당한다.
+SPA에서는 **라우팅**을 클라이언트가 담당한다.
 
-> 라우팅 : 어떤 주소에 어떤 UI를 보여줄지 규칙을 정하는 작업
+> **라우팅** : 어떤 주소에 어떤 UI를 보여줄지 규칙을 정하는 작업
 
 과거에는 라우팅을 서버에서 담당했다.
 
@@ -25,7 +29,7 @@ SPA에서는 라우팅을 클라이언트가 담당한다.
 
   * 브라우저에서 자바스크립트가 구동되지 않으면 UI를 볼 수 없다.
 
-    > 예\) 검색엔진에서 크롤링 불가능
+    예\) 검색엔진에서 크롤링 불가능
 
     * 해결책 : Server Side Rendering
 * 리액트에서 가장 많이 사용되는 라우터 라이브러리
@@ -34,33 +38,33 @@ SPA에서는 라우팅을 클라이언트가 담당한다.
 
 ### 리액트 라우터에서 사용되는 주요 컴포넌트 살펴보기
 
-* BrowserRouter
+* `<BrowserRouter>`
 
   > HTML5 History API 사용
   >
   > 주소만 바꾸고 페이지는 다시 불러오진 않음
 
-* HashRouter
+* `<HashRouter>`
 
   > example.com/\#/path/to/route
   >
   > \#를 사용함. 못생김, 옛날 브라우저 전용
 
-* MemoryRouter
+* `<MemoryRouter>`
 
   > 브라우저의 주소와 무관함, 일체 건들이지 않음
   >
   > 임베디드 웹앱, 리액트 네이티브 등에서 사용
 
-* StaticRouter
+* `<StaticRouter>`
 
   > 서버사이드 렌더링에서 사용하는 용도
 
-* Route
+* `<Route>`
 
   > 라우트를 정의할 때 사용하는 컴포넌트
 
-* Link
+* `<Link>`
 
   > 사용한 Router의 주소를 바꿈
   >
