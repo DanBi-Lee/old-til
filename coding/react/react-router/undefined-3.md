@@ -1,7 +1,5 @@
 # 리액트 라우터의 부가기능
 
-
-
 ## 리액트 라우터의 부가기능
 
 ### history 객체
@@ -49,4 +47,8 @@
   * match : 현재 자신이 렌더링된 위치를 기준으로 값을 받아옴
 * Route가 설정되지 않은 컴포넌트에서 조건부로 이동해야할 때 사용
   * 로그인 성공시 특정 경로 가는 경우 등
+
+{% embed url="https://codesandbox.io/s/router-tutorial-riaegteu-rauteoyi-bugagineung-c7phf?file=/src/Profile.js" %}
+
+
 
